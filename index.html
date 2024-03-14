@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ARRAYS</h1>
+
+
+
+
+
+
+
+
+<script>
+
+// 1Declare an empty array using JS literal notation to store
+// student names in future.
+var studentNames = [];
+
+// 2. Declare an empty array using JS object notation to store student names in future.
+var studentNamesObj = {};
+
+// 3. Declare and initialize a strings array.
+var stringsArray = [""];
+
+// 4. Declare and initialize a numbers array.
+var numbersArray = [1, 2, 3, 4, 5];
+
+// 5. Declare and initialize a boolean array.
+var booleanArray = [true, false];
+
+// 6. Declare and initialize a mixed array.
+var mixedArray = ["apple", 1, true, "banana", 4, false];
+
+// 7. Declare and Initialize an array and store available education qualifications in Pakistan.
+var qualificationsArray = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+
+
+document.write(`<h3> Qualifications </h3>`)
+
+document.write("1 ) "+ qualificationsArray[0] +"<br>")
+document.write("2 ) "+ qualificationsArray[1] + "<br>")
+document.write("3 ) "+ qualificationsArray[2] + "<br>")
+document.write("4 ) "+ qualificationsArray[3] + "<br>")
+document.write("5 ) "+ qualificationsArray[4] + "<br>")
+document.write("6 ) "+ qualificationsArray[5] + "<br>")
+document.write("7 ) "+ qualificationsArray[6] + "<br>")
+document.write("8 ) "+ qualificationsArray[7] + "<br>")
+
+document.write("<hr>")
+
+var names = ["Farhan", "Ahmad", "Mavia", ];
+var score = ["230" , "320" , "100"]
+var percen1 = [(score[0]/ 500)*100 , (score[1] / 500 )*100 , (score[2]/500)*100]
+
+document.write("score of "+ names[0]+ " is " + score[0] +".percentage :"+ percen1[0] +"% <br>" )
+document.write("score of "+ names[1]+ " is " + score[1] +".percentage :"+ percen1[1] +"% <br>" )
+document.write("score of "+ names[2]+ " is " + score[2] +".percentage :"+ percen1[2] +"% <br>" )
+
+
+document.write("<hr>")
+
+
+
+// Initialize an array with color names. Display the array elements in your browser.
+
+var colorname =["red ", "blue" , "green"];
+document.write("<b> Intial Array: </b>" + colorname +"<br>")
+
+
+// a. Ask the user what color he/she wants to add to the beginning & add that color to the beginning of the array.Display the updated array in your browser.
+
+
+var user = prompt("which color you want in the beginning !1");
+
+colorname.unshift(user);
+
+document.write("<b>After adding color to the beginning:</b> " + colorname + " <br>");
+
+// Ask the user what color he/she wants to add to the end& add that color to the end of the array. Display theupdated array in your browser.
+
+
+var user2 = prompt("which color you want in the end !1");
+
+colorname.push(user2);
+
+document.write("<b>After adding color to the End:</b> " + colorname + " <br>");
+
+
+// c. Add two more colors to the beginning
+colorname.unshift("orange", "yellow");
+  document.write("<b>After adding two more colors to the beginning:</b> " + colorname + "<br>");
+
+
+
+// Delete the first color in the array. Display the updated array in your browser.
+
+colorname.shift();
+
+document.write("<b>After deleting the first color:</b> " + colorname + "<br>");
+
+// Delete the last color in the array. Display the updated array in your browser.
+
+colorname.pop();
+
+document.write("<b>After deleting the last color:</b> " + colorname + "<br>");
+
+
+// color name. Then add the color to desired  position/index. . Display the updated array in yourbrowser.
+
+var user3 = prompt("Enter a Index to Add a color ");
+var user4 = prompt("enter the color to add");
+
+colorname.splice(user3 , 0 , user4);
+
+document.write("<br><b>After adding color at desired position/index:</b> " + colorname + "<br>");
+
+
+// Ask the user at which index he/she wants to delete color(s) & how many colors he/she wants to delete. Then 
+// remove the same number of color(s) from user-defined position/index. . Display the updated array in your browser.
+
+var user5 = prompt("Enter a Index to delet a color ");
+var user6 = prompt("enter how many color you want to delet");
+
+colorname.splice(user5 , user6);
+
+document.write("<br><b>After deleting the colors at desired position/index:</b> " + colorname + "<br>");
+
+document.write("<hr>")
+
+var scoreofstudents = [320,230,480,120];
+
+document.write("scores of students: " + scoreofstudents )
+
+
+
+var sort = scoreofstudents.sort();
+
+document.write("<br> orders scores of students: " + sort)
+
+document.write("<hr>")
+
+
+let cities = ['New York', 'London', 'Paris', 'Tokyo', 'Sydney'];
+
+// Copy 3 array elements from cities array to selectedCities array
+let selectedCities = cities.slice(2, 5);
+
+// Display original and selected cities
+document.write("<br><h4>Cities list:</h4> ", cities);
+document.write("<br> <h4>Selected Cities List:</h4>", selectedCities);
+
+
+document.write("<hr>")
+
+
+
+
+var arr = ["This", "is", "my", "cat"];
+
+document.write("<h2>Array:</h2>"+ arr)
+
+var join = arr.join(" ");
+
+document.write("<h2>String:</h2>" + join)
+
+
+document.write("<hr>")
+
+
+var device = ['keyboard','mouse','printer','monitor']
+
+document.write("<h2> Devices: </h2>" , device)
+   
+document.write("<h2> out: </h2>" , device.shift())
+document.write("<h2> out: </h2>" , device.shift())
+document.write("<h2> out: </h2>" , device.shift())
+document.write("<h2> out: </h2>" , device.shift())
+
+
+document.write("<hr>")
+
+
+
+var device2 = ['keyboard','mouse','printer','monitor'];
+
+document.write("<h2> Devices: </h2>" , device);
+
+document.write("<h2> out: </h2>" , device2.pop())
+document.write("<h2> out: </h2>" , device2.pop())
+document.write("<h2> out: </h2>" , device2.pop())
+document.write("<h2> out: </h2>" , device2.pop())
+
+document.write("<hr>")
+
+
+var manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+
+document.write("<select ><option>"+manufacturers[0]+"</option><option>"+manufacturers[1]+"</option><option>"+manufacturers[2]+"</option><option>"+manufacturers[3]+"</option><option>"+manufacturers[4]+"</option><option>"+manufacturers[5]+"</option></select>")
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
